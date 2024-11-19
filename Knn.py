@@ -1,18 +1,3 @@
-import streamlit as st
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
-
-st.header("โปรเจคการจำแนกข้อมูลดอกไม้")
-#st.image("ใส่รูปนักศึกษา")
-
-dt=pd.read_csv('./data/iris-3.csv')
-st.subheader('ข้อมูลดิบของข้อมูล iris')
-st.write(dt.head(10))
-
-st.subheader('การจำแนกข้อมูลใหม่')
-
 from sklearn.neighbors import KNeighborsClassifier
 import streamlit as st
 import pandas as pd
